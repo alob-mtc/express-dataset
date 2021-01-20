@@ -13,4 +13,4 @@ COPY . /src/expresschallenge
 # expose a port
 EXPOSE 8000
 # set default cmd
-CMD [ "yarn", "start" ]
+CMD [ "yarn", "serve" ]
