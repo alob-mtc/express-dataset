@@ -12,6 +12,7 @@ class ActorRoutes extends ActorController {
 
   private routes = () => {
     this.router.get('/', this.getActorControllerAsync);
+    this.router.put('/', this.upatedActorControllerAsync);
     this.router.get('/streaks', this.getActorByStreakControllerAsync);
   };
 }

@@ -50,8 +50,8 @@ export default class ActorServices implements Required<ActorServices> {
       if (!existingActor) {
         return makeResponse(null, HttpStatusCode.NOT_FOUND, 'The actor does not exist');
       }
-
-      throw new Error('Method not implemented yet');
+      await Actor.update({ avatar_url: update.avatar_url }, { where: { id: update.id } });
+      return makeResponse(null);
     } catch (error) {
       return makeResponse(null, HttpStatusCode.INTERNAL_ERROR, error.message);
     }
