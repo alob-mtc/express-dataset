@@ -624,4 +624,19 @@ yarn build
 ```sh
 yarn serve
 ```
+
 #### Database used: Postgresql
+
+### build docker image
+
+```sh
+yarn build
+
+docker build -t express-challenge .
+```
+
+### run app
+
+```sh
+docker run -p 8000:8000 -t express-challenge
+```
