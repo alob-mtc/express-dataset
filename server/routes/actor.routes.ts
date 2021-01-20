@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { useValidatorPipe } from '../middlewares/validation.pipe';
 import { ActorController } from '../controllers/actor.controller';
 
 class ActorRoutes extends ActorController {
@@ -12,7 +13,7 @@ class ActorRoutes extends ActorController {
 
   private routes = () => {
     this.router.get('/', this.getActorControllerAsync);
-    this.router.put('/', this.upatedActorControllerAsync);
+    this.router.put('/', useValidatorPipe('updateActor'), this.upatedActorControllerAsync);
     this.router.get('/streaks', this.getActorByStreakControllerAsync);
   };
 }

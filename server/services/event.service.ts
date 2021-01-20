@@ -45,7 +45,7 @@ export default class EventServices implements Required<EventServices> {
         repo_id: event.repo.id,
         created_at: new Date(event.created_at),
       } as IEvent);
-      return makeResponse(event);
+      return makeResponse(event, HttpStatusCode.CREATED);
     } catch (error) {
       return makeResponse(null, HttpStatusCode.INTERNAL_ERROR, error.message);
     }
@@ -127,6 +127,21 @@ export default class EventServices implements Required<EventServices> {
       );
       return makeResponse(events);
     } catch (error) {
+      return makeResponse(null, HttpStatusCode.INTERNAL_ERROR, error.message);
+    }
+  };
+  /**
+   * @author Akinlua
+   * @method getEventByActorServiceAsync
+   * @desc Feature will get event
+   * @returns {object} BaseResponse
+   */
+  deleteAllEventServiceAsync = async (): Promise<BaseResponse<any>> => {
+    try {
+      await Event.destroy({ where: {} });
+      return makeResponse(null);
+    } catch (error) {
+      console.log(error);
       return makeResponse(null, HttpStatusCode.INTERNAL_ERROR, error.message);
     }
   };

@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { useValidatorPipe } from '../middlewares/validation.pipe';
 import { EventController } from '../controllers/event.controller';
 
 class EventRoutes extends EventController {
@@ -11,7 +12,7 @@ class EventRoutes extends EventController {
   }
 
   private routes = () => {
-    this.router.post('/', this.addEventControllerAsync);
+    this.router.post('/', useValidatorPipe('addEvent'), this.addEventControllerAsync);
     this.router.get('/', this.getAllEventControllerAsync);
     this.router.get('/actors/:actorId', this.getEventByActorControllerAsync);
   };
