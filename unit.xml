@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="3.3340" tests="6" failures="6">
+  <testsuite name="Root Suite" timestamp="2021-01-20T18:03:47" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="git_test " timestamp="2021-01-20T18:03:47" tests="6" file="/home/kira/Desktop/node-app/wirepaychat/express-dataset/test/tests.js" time="3.3340" failures="6">
+    <testcase name="git_test  http00.json: Sample Test" time="0.2240" classname="http00.json: Sample Test">
+      <failure message="expected 500 to equal 201" type="AssertionError"><![CDATA[AssertionError: expected 500 to equal 201
+    at test/tests.js:92:37
+From previous event:
+    at Context.<anonymous> (test/tests.js:76:8)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+    <testcase name="git_test  http01.json: Additional Test 1" time="0.3260" classname="http01.json: Additional Test 1">
+      <failure message="expected 500 to equal 201" type="AssertionError"><![CDATA[AssertionError: expected 500 to equal 201
+    at test/tests.js:92:37
+From previous event:
+    at Context.<anonymous> (test/tests.js:76:8)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+    <testcase name="git_test  http02.json: Additional Test 2" time="0.4910" classname="http02.json: Additional Test 2">
+      <failure message="expected 500 to equal 201" type="AssertionError"><![CDATA[AssertionError: expected 500 to equal 201
+    at test/tests.js:92:37
+From previous event:
+    at Context.<anonymous> (test/tests.js:76:8)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+    <testcase name="git_test  http03.json: Additional Test 3" time="0.6110" classname="http03.json: Additional Test 3">
+      <failure message="expected 500 to equal 201" type="AssertionError"><![CDATA[AssertionError: expected 500 to equal 201
+    at test/tests.js:92:37
+From previous event:
+    at Context.<anonymous> (test/tests.js:76:8)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+    <testcase name="git_test  http04.json: Additional Test 4" time="0.8830" classname="http04.json: Additional Test 4">
+      <failure message="expected 500 to equal 201" type="AssertionError"><![CDATA[AssertionError: expected 500 to equal 201
+    at test/tests.js:92:37
+From previous event:
+    at Context.<anonymous> (test/tests.js:76:8)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+    <testcase name="git_test  http05.json: Additional Test 5" time="0.7990" classname="http05.json: Additional Test 5">
+      <failure message="expected 500 to equal 201" type="AssertionError"><![CDATA[AssertionError: expected 500 to equal 201
+    at test/tests.js:92:37
+From previous event:
+    at Context.<anonymous> (test/tests.js:76:8)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

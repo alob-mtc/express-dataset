@@ -1,4 +1,4 @@
-#Node.js Express: Express Challenge API (48Hours) 
+#Node.js Express: Express Challenge API (48Hours)
 <br>
 
 <p>In this challenge, you are part of a team building a git event tracking platform. One requirement is for a REST API service to provide events information using the Nodejs Express framework. You will need to add functionality to add and delete information as well as to perform some queries. You'll be dealing with typical information for git event data like repository, actor, event type, etc. The team has come up with a set of requirements including filtering and ordering requirements, response codes and error messages for the queries you must implement.</p>
@@ -608,4 +608,19 @@
 </div>
 </details>
 
-*git clone https://github.com/ben-x/express-dataset node-js-express-dataset-api-6kmle676kc8*
+_git clone https://github.com/ben-x/express-dataset node-js-express-dataset-api-6kmle676kc8_
+
+## SETUP
+
+#### build code and run db migration
+
+```sh
+yarn build
+
+```
+
+#### run app
+
+```sh
+yarn serve
+```
