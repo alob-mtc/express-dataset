@@ -624,3 +624,4 @@ yarn build
 ```sh
 yarn serve
 ```
+#### Database used: Postgresql
