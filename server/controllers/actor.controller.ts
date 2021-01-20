@@ -26,7 +26,7 @@ export class ActorController extends ActorServices {
    * @returns {object} Json data
    */
   protected getActorByStreakControllerAsync = async (_: Request, res: Response): Promise<any> => {
-    const data = await this.getActorServiceAsync();
+    const data = await this.getActorByStreakServiceAsync();
     return res.status(data.statusCode).json(data.data);
   };
   /**
