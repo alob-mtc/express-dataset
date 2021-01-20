@@ -21,6 +21,9 @@ export class Program extends Startup {
   public Run(): void {
     this.initialize();
   }
+  public GetApp(): express.Application {
+    return this.getApp();
+  }
 }
 
 new Program().Run();

@@ -23,7 +23,7 @@
     "write:file": "ts-node server/scripts/write-sequelize-config.ts",
     "scaffold": "npx sequelize-cli model:generate --name",
     "pretest": "npm install",
-    "test": "./node_modules/.bin/mocha test"
+    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register test"
   },
   "dependencies": {
     "chai": "^4.1.1",

@@ -87,7 +87,9 @@ export class Startup {
       console.info('  **Press CTRL + C to stop**');
     });
   };
-
+  protected getApp(): any {
+    return this.app;
+  }
   protected catchUnknownRoutes = () => {
     this.app.use(
       '/*',
